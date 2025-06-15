@@ -1,31 +1,48 @@
 <template>
   <div class="app">
     <TelaInicial v-if="telaAtual === 'inicial'" @comecar="iniciarJogo" />
-    <TelaJogo v-else @voltar-inicio="voltarInicio" />
+    <TelaJogo 
+      v-else-if="telaAtual === 'jogo'" 
+      @voltar-inicio="voltarInicio"
+      @jogo-finalizado="finalizarJogo"
+    />
+    <TelaFinal 
+      v-else 
+      :pontuacao="pontuacaoFinal"
+      @voltar-inicio="voltarInicio"
+    />
   </div>
 </template>
 
 <script>
 import TelaInicial from './components/TelaInicial.vue'
 import TelaJogo from './components/TelaJogo.vue'
+import TelaFinal from './components/TelaFinal.vue'
 
 export default {
   name: 'App',
   components: {
     TelaInicial,
-    TelaJogo
+    TelaJogo,
+    TelaFinal
   },
   data() {
     return {
-      telaAtual: 'inicial'
+      telaAtual: 'inicial',
+      pontuacaoFinal: 0
     }
   },
   methods: {
     iniciarJogo() {
       this.telaAtual = 'jogo'
+      this.pontuacaoFinal = 0
     },
     voltarInicio() {
       this.telaAtual = 'inicial'
+    },
+    finalizarJogo(pontuacao) {
+      this.pontuacaoFinal = pontuacao
+      this.telaAtual = 'final'
     }
   }
 }

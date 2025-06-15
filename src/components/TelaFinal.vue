@@ -63,16 +63,37 @@
         </div>
       </div>
     </div>
+
+    <RankingModal 
+      :show="mostrarRanking"
+      :pontuacao="pontuacao"
+      @fechar="fecharRanking"
+    />
   </div>
 </template>
 
 <script>
+import RankingModal from './RankingModal.vue'
+
 export default {
   name: 'TelaFinal',
+  components: {
+    RankingModal
+  },
   props: {
     pontuacao: {
       type: Number,
       required: true
+    }
+  },
+  data() {
+    return {
+      mostrarRanking: true
+    }
+  },
+  methods: {
+    fecharRanking() {
+      this.mostrarRanking = false
     }
   }
 }

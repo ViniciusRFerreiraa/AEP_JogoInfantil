@@ -146,18 +146,17 @@ export default {
           { nome: 'Papel Sulfite', icone: 'mdi mdi-file', tipo: 'papel' },
           { nome: 'Livro', icone: 'mdi mdi-book', tipo: 'papel' },
           { nome: 'Papelão', icone: 'mdi mdi-box-shadow', tipo: 'papel' },
-          { nome: 'Cartaz', icone: 'mdi mdi-poster', tipo: 'papel' },
+          { nome: 'Cartaz', icone: 'mdi mdi-billboard', tipo: 'papel' },
           { nome: 'Folheto', icone: 'mdi mdi-file-document', tipo: 'papel' },
           { nome: 'Agenda', icone: 'mdi mdi-calendar-blank', tipo: 'papel' },
           { nome: 'Calendário', icone: 'mdi mdi-calendar', tipo: 'papel' },
-          { nome: 'Cartão', icone: 'mdi mdi-card-text', tipo: 'papel' },
           { nome: 'Papel de Presente', icone: 'mdi mdi-gift', tipo: 'papel' },
           { nome: 'Apostila', icone: 'mdi mdi-book-open', tipo: 'papel' },
           { nome: 'Papel de Carta', icone: 'mdi mdi-email-outline', tipo: 'papel' },
           { nome: 'Caixa de Sapato', icone: 'mdi mdi-shoe-formal', tipo: 'papel' },
           { nome: 'Caixa de Pizza', icone: 'mdi mdi-pizza', tipo: 'papel' },
           { nome: 'Papel de Embrulho', icone: 'mdi mdi-gift-outline', tipo: 'papel' },
-          { nome: 'Rótulo de Papel', icone: 'mdi mdi-label', tipo: 'papel' }
+          { nome: 'Embalagem de Sabão em Pó', icone: 'mdi mdi-package-variant', tipo: 'papel' }
         ],
         plastico: [
           { nome: 'Garrafa PET', icone: 'mdi mdi-bottle-soda', tipo: 'plastico' },
@@ -173,14 +172,13 @@ export default {
           { nome: 'Garrafa de Leite', icone: 'mdi mdi-bottle-tonic', tipo: 'plastico' },
           { nome: 'Embalagem de Detergente', icone: 'mdi mdi-spray', tipo: 'plastico' },
           { nome: 'Pote de Margarina', icone: 'mdi mdi-bowl', tipo: 'plastico' },
-          { nome: 'Tubo de Pasta', icone: 'mdi mdi-toothbrush-paste', tipo: 'plastico' },
-          { nome: 'Garrafa de Suco', icone: 'mdi mdi-bottle-wine-outline', tipo: 'plastico' },
+          { nome: 'Tubo de Creme Dental', icone: 'mdi mdi-toothbrush-paste', tipo: 'plastico' },
+          { nome: 'Garrafa de Suco de Laranja', icone: 'mdi mdi-bottle-soda-classic', tipo: 'plastico' },
           { nome: 'Embalagem de Biscoito', icone: 'mdi mdi-cookie', tipo: 'plastico' },
           { nome: 'Pote de Sorvete', icone: 'mdi mdi-ice-cream', tipo: 'plastico' },
           { nome: 'Sacola de Mercado', icone: 'mdi mdi-shopping-outline', tipo: 'plastico' },
-          { nome: 'Embalagem de Sabão', icone: 'mdi mdi-water', tipo: 'plastico' },
-          { nome: 'Garrafa de Refrigerante', icone: 'mdi mdi-bottle-soda-classic', tipo: 'plastico' },
-          { nome: 'Copo de Suco', icone: 'mdi mdi-glass-mug', tipo: 'plastico' }
+          { nome: 'Tampinha', icone: 'mdi mdi-bottle-soda-classic-outline', tipo: 'plastico' },
+          { nome: 'Cartão de Crédito', icone: 'mdi mdi-credit-card', tipo: 'plastico' }
         ],
         metal: [
           { nome: 'Lata', icone: 'mdi mdi-beer', tipo: 'metal' },
@@ -197,7 +195,6 @@ export default {
           { nome: 'Lata de Conserva', icone: 'mdi mdi-bowl-mix', tipo: 'metal' },
           { nome: 'Talheres', icone: 'mdi mdi-silverware-fork-knife', tipo: 'metal' },
           { nome: 'Arame', icone: 'mdi mdi-vector-line', tipo: 'metal' },
-          { nome: 'Tampinha', icone: 'mdi mdi-bottle-soda-classic', tipo: 'metal' },
           { nome: 'Grampo', icone: 'mdi mdi-paperclip-check', tipo: 'metal' },
           { nome: 'Alicate', icone: 'mdi mdi-pliers', tipo: 'metal' },
           { nome: 'Chave de Fenda', icone: 'mdi mdi-screwdriver', tipo: 'metal' },
@@ -205,7 +202,7 @@ export default {
           { nome: 'Forma de Bolo', icone: 'mdi mdi-cake', tipo: 'metal' }
         ],
         vidro: [
-          { nome: 'Garrafa', icone: 'mdi mdi-bottle-wine', tipo: 'vidro' },
+          { nome: 'Garrafa de Vidro', icone: 'mdi mdi-bottle-wine', tipo: 'vidro' },
           { nome: 'Copo', icone: 'mdi mdi-glass-wine', tipo: 'vidro' },
           { nome: 'Pote de Vidro', icone: 'mdi mdi-bottle-tonic', tipo: 'vidro' },
           { nome: 'Perfume', icone: 'mdi mdi-spray', tipo: 'vidro' },
@@ -219,7 +216,7 @@ export default {
           { nome: 'Garrafa de Vinho', icone: 'mdi mdi-bottle-wine', tipo: 'vidro' },
           { nome: 'Vidro de Tempero', icone: 'mdi mdi-shaker', tipo: 'vidro' },
           { nome: 'Vidro de Azeitona', icone: 'mdi mdi-bottle-tonic-plus', tipo: 'vidro' },
-          { nome: 'Garrafa de Azeite', icone: 'mdi mdi-oil', tipo: 'vidro' },
+          { nome: 'Vidro de Azeite', icone: 'mdi mdi-oil', tipo: 'vidro' },
           { nome: 'Vidro de Palmito', icone: 'mdi mdi-bottle-tonic-outline', tipo: 'vidro' },
           { nome: 'Porta de Vidro', icone: 'mdi mdi-door', tipo: 'vidro' },
           { nome: 'Vidro de Molho', icone: 'mdi mdi-bottle-soda', tipo: 'vidro' },
@@ -239,8 +236,8 @@ export default {
           { nome: 'Pão Velho', icone: 'mdi mdi-bread-slice', tipo: 'organico' },
           { nome: 'Casca de Laranja', icone: 'mdi mdi-fruit-citrus', tipo: 'organico' },
           { nome: 'Erva de Chá', icone: 'mdi mdi-tea', tipo: 'organico' },
-          { nome: 'Casca de Batata', icone: 'mdi mdi-potato', tipo: 'organico' },
-          { nome: 'Casca de Cebola', icone: 'mdi mdi-onion', tipo: 'organico' },
+          { nome: 'Casca de Batata', icone: 'mdi mdi-food-apple-outline', tipo: 'organico' },
+          { nome: 'Casca de Cebola', icone: 'mdi mdi-food-outline', tipo: 'organico' },
           { nome: 'Folha de Alface', icone: 'mdi mdi-leaf-maple', tipo: 'organico' },
           { nome: 'Casca de Maçã', icone: 'mdi mdi-fruit-cherries', tipo: 'organico' },
           { nome: 'Restos de Verdura', icone: 'mdi mdi-sprout', tipo: 'organico' },
@@ -289,7 +286,7 @@ export default {
       
       if (estaCorreto) {
         item.status = 'correto'
-        this.pontuacao += 10
+        this.pontuacao += 20
         
         setTimeout(() => {
           item.reciclado = true
@@ -299,6 +296,7 @@ export default {
             if (this.nivelAtual === 10) {
               setTimeout(() => {
                 this.jogoFinalizado = true
+                this.$emit('jogo-finalizado', this.pontuacao)
               }, 500)
             } else {
               setTimeout(() => {
@@ -310,6 +308,7 @@ export default {
         }, 600)
       } else {
         item.status = 'incorreto'
+        this.pontuacao = Math.max(0, this.pontuacao - 5)
         setTimeout(() => {
           item.status = null
         }, 800)
